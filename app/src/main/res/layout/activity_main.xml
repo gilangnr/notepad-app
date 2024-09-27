@@ -31,12 +31,12 @@
 
         <Button
             android:id="@+id/button_new"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="72dp"
             android:layout_height="match_parent"
             android:textSize="11sp"
             android:padding="0dp"
             android:layout_marginBottom="@dimen/tiny_margin"
+            android:backgroundTint="@color/black"
             android:text="@string/file_new"/>
 
         <Button
