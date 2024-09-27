@@ -52,7 +52,7 @@
 
         <Button
             android:id="@+id/button_save"
-            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="#222222"
             android:layout_width="72dp"
             android:layout_height="match_parent"
             android:textSize="11sp"
