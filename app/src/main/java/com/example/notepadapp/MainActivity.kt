@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun newFile() {
         binding.editTitle.setText("")
         binding.editFile.setText("")
-        Toast.makeText(this, "Clearing File", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Membersihkan File", Toast.LENGTH_SHORT).show()
     }
 
     private fun showList() {
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val fileModel = FileHelper.readFromFile(this, title)
         binding.editTitle.setText(fileModel.filename)
         binding.editFile.setText(fileModel.data)
-        Toast.makeText(this, "Loading: " + fileModel.filename + " data", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Memuat: " + fileModel.filename + " data", Toast.LENGTH_SHORT).show()
     }
 
     override fun onClick(v: View?) {
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 fileModel.filename = title
                 fileModel.data = text
                 FileHelper.writeToFile(fileModel, this)
-                Toast.makeText(this, "Saving " + fileModel.filename + " file", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Menyimpan " + fileModel.filename + " file", Toast.LENGTH_SHORT).show()
             }
         }
     }
